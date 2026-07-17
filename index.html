@@ -1,0 +1,616 @@
+<!DOCTYPE html>
+<html lang="en-AU">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+<meta name="robots" content="noindex, follow">
+<title>Dentist Haberfield — New Patient Package | Haberfield Dental Practice</title>
+<meta name="description" content="Your local dentist in Haberfield, keeping the Inner West smiling since 1922. Complete new patient package, family dentistry, emergency care and Saturday appointments. Call (02) 9797 8080 or book online.">
+<meta name="theme-color" content="#22354a">
+<link rel="icon" href="https://haberfielddentists.com.au/wp-content/uploads/2024/08/cropped-Screenshot-2024-08-26-123720-270x270.png">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Dentist Haberfield — New Patient Package | Haberfield Dental Practice">
+<meta property="og:description" content="Keeping Haberfield smiling for over 100 years. Complete new patient package, family and emergency dentistry in the heart of Haberfield.">
+
+<!-- Fonts: Fraunces (warm display serif) + Plus Jakarta Sans (friendly UI/body) -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,400;1,9..144,500&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+<style>
+/* =========================================================================
+   HABERFIELD DENTAL PRACTICE — Google Ads landing page (v2)
+   Warm, welcoming light theme: cream, deep warm navy, terracotta.
+   Photographic hero banner. Vertical scroll, persistent Call + Book CTAs.
+   ========================================================================= */
+
+:root{
+  --cream:      #faf6ef;   /* page background */
+  --cream-2:    #f3ecdf;   /* alt section background */
+  --ink:        #29241c;   /* deep warm text */
+  --ink-soft:   #5d564a;   /* body text */
+  --ink-dim:    #8a8172;   /* captions */
+  --navy:       #2e4a66;   /* primary — deep warm navy */
+  --navy-deep:  #22384e;
+  --navy-lite:  #e4ebf3;   /* navy tint background */
+  --terra:      #c2703e;   /* warm terracotta accent / primary CTA */
+  --terra-deep: #a85c30;
+  --terra-lite: #f6e4d4;
+  --gold:       #e0a83c;   /* stars */
+  --white:      #ffffff;
+  --line:       #e5dccb;
+
+  --bar-h: 66px;
+  --dock-h: 74px;
+  --maxw: 1140px;
+  --r:   22px;
+  --r-s: 14px;
+
+  --shadow-card: 0 14px 40px -18px rgba(34,53,74,.25);
+  --shadow-soft: 0 8px 24px -12px rgba(34,53,74,.2);
+  --ease: cubic-bezier(.16,.84,.34,1);
+}
+
+*{ box-sizing:border-box; }
+html{ scroll-behavior:smooth; }
+body{
+  margin:0; background:var(--cream); color:var(--ink-soft);
+  font-family:"Plus Jakarta Sans",system-ui,-apple-system,sans-serif;
+  font-size:16.5px; line-height:1.65; -webkit-font-smoothing:antialiased;
+}
+img{ max-width:100%; }
+a{ color:var(--navy); }
+b,strong{ color:var(--ink); }
+
+/* ---------- type ---------- */
+h1,h2,h3{ font-family:"Fraunces",serif; font-weight:500; line-height:1.12; margin:0 0 .5em; letter-spacing:-.01em; color:var(--ink); }
+h1{ font-size:clamp(2.4rem,5.4vw,3.9rem); }
+h2{ font-size:clamp(1.85rem,3.5vw,2.6rem); }
+h3{ font-size:1.26rem; font-weight:600; }
+h1 em, h2 em{ font-style:italic; color:var(--terra); }
+.eyebrow{ display:flex; align-items:center; gap:.6em; font-size:.78rem; font-weight:800; letter-spacing:.2em; text-transform:uppercase; color:var(--navy); margin:0 0 1.1rem; }
+.eyebrow::before{ content:""; width:26px; height:2px; background:var(--terra); border-radius:2px; }
+.lede{ font-size:clamp(1.02rem,1.6vw,1.15rem); color:var(--ink-soft); max-width:62ch; margin:0 0 1rem; }
+.smallprint{ margin-top:1.6rem; font-size:.78rem; color:var(--ink-dim); line-height:1.6; max-width:88ch; }
+
+/* ---------- layout ---------- */
+section{ padding:clamp(60px,8.5vh,104px) clamp(20px,5vw,48px); }
+section.alt{ background:var(--cream-2); }
+.inner{ max-width:var(--maxw); margin:0 auto; }
+.grid-2{ display:grid; grid-template-columns:1.05fr .95fr; gap:clamp(2rem,5vw,4rem); align-items:center; }
+@media (max-width:900px){ .grid-2{ grid-template-columns:1fr; } }
+
+/* ---------- cards ---------- */
+.card{ background:var(--white); border:1px solid var(--line); border-radius:var(--r); box-shadow:var(--shadow-soft); }
+
+/* ---------- buttons ---------- */
+.btn{ display:inline-flex; align-items:center; justify-content:center; gap:.55em;
+  font:inherit; font-weight:800; font-size:1rem; letter-spacing:.01em; cursor:pointer;
+  border-radius:999px; padding:.95em 1.9em; text-decoration:none; border:2px solid transparent;
+  transition:transform .2s var(--ease), box-shadow .2s, background .2s, border-color .2s, color .2s; }
+.btn:hover{ transform:translateY(-2px); }
+.btn:focus-visible{ outline:3px solid var(--terra); outline-offset:3px; }
+.btn-primary{ background:var(--terra); color:#fff; box-shadow:0 12px 28px -10px rgba(194,112,62,.55); }
+.btn-primary:hover{ background:var(--terra-deep); box-shadow:0 16px 34px -10px rgba(194,112,62,.65); }
+.btn-ghost{ background:transparent; color:var(--navy); border-color:var(--navy); }
+.btn-ghost:hover{ background:var(--navy-lite); }
+.btn-lg{ font-size:1.06rem; padding:1.02em 2.15em; }
+.btn svg{ width:1.05em; height:1.05em; flex:0 0 auto; }
+.cta-row{ display:flex; flex-wrap:wrap; gap:.9rem; align-items:center; margin-top:1.6rem; }
+.cta-note{ font-size:.82rem; color:var(--ink-dim); width:100%; margin:.2rem 0 0; }
+
+/* ---------- top bar ---------- */
+.topbar{ position:fixed; inset:0 0 auto; z-index:60; height:var(--bar-h);
+  display:flex; align-items:center; justify-content:space-between; gap:1rem;
+  padding:0 clamp(16px,4vw,40px);
+  background:rgba(250,246,239,.94); -webkit-backdrop-filter:blur(12px); backdrop-filter:blur(12px);
+  border-bottom:1px solid var(--line); }
+.topbar img{ height:40px; width:auto; display:block; }
+.topbar-actions{ display:flex; align-items:center; gap:.7rem; }
+.topbar .btn{ padding:.6em 1.3em; font-size:.92rem; }
+.topbar-phone{ display:inline-flex; align-items:center; gap:.5em; color:var(--ink); text-decoration:none; font-weight:800; font-size:.95rem; white-space:nowrap; }
+.topbar-phone svg{ width:1em; height:1em; color:var(--terra); }
+.topbar-phone:hover{ color:var(--navy); }
+@media (max-width:640px){ .topbar-phone span{ display:none; } .topbar-phone{ padding:.55em; border:2px solid var(--terra); border-radius:999px; } .topbar img{ height:34px; } }
+
+/* ---------- hero (photo banner) ---------- */
+#hero{ position:relative; isolation:isolate; overflow:hidden; display:flex; align-items:center;
+  min-height:min(92vh,880px); padding-top:calc(var(--bar-h) + clamp(40px,7vh,72px)); }
+.hero-bg{ position:absolute; inset:0; z-index:0; overflow:hidden; }
+.hero-bg img{ width:100%; height:100%; object-fit:cover; object-position:center 30%; display:block; }
+@media (min-width:881px){ .hero-bg img{ transform:translateX(9%) scale(1.15); } }
+.hero-veil{ position:absolute; inset:0; z-index:1;
+  background:
+    linear-gradient(100deg, rgba(26,38,52,.9) 0%, rgba(26,38,52,.72) 38%, rgba(26,38,52,.3) 68%, rgba(26,38,52,.45) 100%),
+    linear-gradient(180deg, rgba(26,38,52,.55) 0%, transparent 26%, transparent 66%, rgba(26,38,52,.75) 100%); }
+@media (max-width:880px){
+  .hero-veil{ background:linear-gradient(180deg, rgba(26,38,52,.78) 0%, rgba(26,38,52,.6) 45%, rgba(26,38,52,.9) 100%); } }
+#hero .inner{ position:relative; z-index:2; width:100%; }
+#hero .inner > *{ max-width:660px; }
+#hero h1{ color:#fff; }
+#hero h1 em{ color:#f2c48f; }
+#hero .lede{ color:#e6e0d4; }
+.hero-badge{ display:inline-flex; align-items:center; gap:.55em; background:rgba(255,255,255,.14); color:#fbe9d6;
+  border:1px solid rgba(255,255,255,.28); -webkit-backdrop-filter:blur(8px); backdrop-filter:blur(8px);
+  font-size:.82rem; font-weight:800; border-radius:999px; padding:.5em 1.1em; margin-bottom:1.2rem; }
+.hero-badge svg{ width:1em; height:1em; }
+.incl-chips{ list-style:none; display:flex; flex-wrap:wrap; gap:.5rem; padding:0; margin:1.3rem 0 0; }
+#hero .incl-chips li{ background:rgba(255,255,255,.12); border:1px solid rgba(255,255,255,.26); color:#f2eee6;
+  -webkit-backdrop-filter:blur(8px); backdrop-filter:blur(8px); }
+.incl-chips li{ display:flex; align-items:center; gap:.5em; background:var(--white); border:1px solid var(--line);
+  border-radius:999px; padding:.45em 1em; font-size:.88rem; font-weight:600; color:var(--ink-soft); }
+.check{ display:inline-grid; place-items:center; width:1.25em; height:1.25em; border-radius:50%; background:var(--terra-lite); color:var(--terra-deep); flex:0 0 auto; }
+#hero .check{ background:rgba(242,196,143,.25); color:#f2c48f; }
+.check svg{ width:.68em; height:.68em; }
+#hero .btn-ghost{ color:#fff; border-color:rgba(255,255,255,.7); }
+#hero .btn-ghost:hover{ background:rgba(255,255,255,.14); }
+.reviews{ display:flex; align-items:center; gap:.7rem; margin-top:1.7rem; flex-wrap:wrap; }
+.reviews .stars{ color:var(--gold); font-size:1.3rem; letter-spacing:.1em; line-height:1; white-space:nowrap; }
+.reviews-text{ color:var(--ink-soft); font-size:.98rem; }
+.reviews-text strong{ color:var(--ink); }
+#hero .reviews-text{ color:#e6e0d4; }
+#hero .reviews-text strong{ color:#fff; }
+.hours-line{ display:flex; align-items:center; gap:.6em; margin-top:.9rem; font-size:.92rem; color:var(--ink-dim); }
+#hero .hours-line{ color:#cfd6dd; }
+.hours-line svg{ width:1.05em; height:1.05em; color:var(--terra); flex:0 0 auto; }
+#hero .hours-line svg{ color:#f2c48f; }
+.sat-pill{ display:inline-flex; align-items:center; gap:.4em; background:var(--terra); color:#fff;
+  font-weight:800; font-size:.84rem; border-radius:999px; padding:.35em .95em; margin-left:.35em; white-space:nowrap; }
+#hero .sat-pill{ box-shadow:0 6px 18px -6px rgba(194,112,62,.6); }
+
+/* ---------- offer feature (new patient) ---------- */
+.offer-photo img{ display:block; width:100%; height:min(58vh,560px); object-fit:cover; border-radius:var(--r); box-shadow:var(--shadow-card); }
+
+/* ---------- ticks ---------- */
+.ticks{ list-style:none; padding:0; margin:1.2rem 0 0; display:grid; gap:.6rem; }
+.ticks.two-col{ grid-template-columns:1fr 1fr; }
+@media (max-width:640px){ .ticks.two-col{ grid-template-columns:1fr; } }
+.ticks li{ display:flex; gap:.6em; align-items:flex-start; color:var(--ink-soft); }
+.ticks li .check{ margin-top:.28em; }
+
+/* ---------- offers grid ---------- */
+.offer-grid{ display:grid; grid-template-columns:repeat(3,1fr); gap:1.2rem; margin-top:2.2rem; align-items:stretch; }
+@media (max-width:960px){ .offer-grid{ grid-template-columns:1fr; } }
+.offer{ display:flex; flex-direction:column; overflow:hidden; }
+.offer > img{ display:block; width:100%; height:210px; object-fit:cover; }
+.offer .body{ padding:1.5rem 1.5rem 1.7rem; display:flex; flex-direction:column; flex:1; }
+.offer .tag{ align-self:flex-start; font-size:.7rem; font-weight:800; letter-spacing:.14em; text-transform:uppercase;
+  color:var(--navy-deep); background:var(--navy-lite); padding:.4em .95em; border-radius:999px; margin-bottom:1rem; }
+.offer .tag.warm{ color:#8c4f2a; background:var(--terra-lite); }
+.offer p{ font-size:.94rem; margin:.3rem 0 0; }
+.offer .ticks{ margin-top:.8rem; flex:1; }
+.offer .ticks li{ font-size:.92rem; }
+
+/* ---------- dentists ---------- */
+.dentists{ display:grid; grid-template-columns:1fr 1fr; gap:1.4rem; margin-top:2.2rem; }
+@media (max-width:860px){ .dentists{ grid-template-columns:1fr; } }
+.dentist-card{ overflow:hidden; display:flex; flex-direction:column; }
+.dentist-card img{ display:block; width:100%; height:400px; object-fit:cover; object-position:center 22%; }
+.dentist-card .body{ padding:1.6rem 1.6rem 1.8rem; }
+.dentist-card .role{ font-size:.74rem; font-weight:800; letter-spacing:.16em; text-transform:uppercase; color:var(--terra); margin:0 0 .35rem; }
+.dentist-card h3{ margin-bottom:.15rem; font-size:1.45rem; }
+.dentist-card .quals{ color:var(--ink-dim); font-size:.88rem; margin:0 0 .9rem; }
+.dentist-card blockquote{ margin:0 0 .9rem; padding-left:.9rem; border-left:3px solid var(--terra);
+  font-family:"Fraunces",serif; font-style:italic; color:var(--ink); font-size:1.02rem; line-height:1.5; }
+.dentist-card p{ font-size:.94rem; margin:0; }
+
+/* ---------- stats band ---------- */
+.stats{ display:grid; grid-template-columns:repeat(3,1fr); gap:1.1rem; margin-top:2.4rem; }
+@media (max-width:760px){ .stats{ grid-template-columns:1fr; } }
+.stat{ padding:1.5rem 1.4rem; text-align:center; }
+.stat .num{ font-family:"Fraunces",serif; font-size:clamp(2.2rem,4vw,2.9rem); color:var(--navy); line-height:1; display:block; }
+.stat p{ margin:.5rem 0 0; font-size:.92rem; color:var(--ink-soft); }
+
+/* ---------- services ---------- */
+.svc-grid{ display:grid; grid-template-columns:repeat(4,1fr); gap:1.1rem; margin-top:2.2rem; }
+@media (max-width:1000px){ .svc-grid{ grid-template-columns:repeat(2,1fr); } }
+@media (max-width:600px){ .svc-grid{ grid-template-columns:1fr; } }
+.svc{ padding:1.5rem 1.35rem; }
+.svc .ico{ display:inline-grid; place-items:center; width:46px; height:46px; border-radius:14px; background:var(--navy-lite); color:var(--navy); margin-bottom:.9rem; }
+.svc .ico svg{ width:22px; height:22px; }
+.svc h3{ font-size:1.08rem; margin-bottom:.5rem; }
+.svc ul{ list-style:none; padding:0; margin:0; display:grid; gap:.3rem; }
+.svc li{ font-size:.9rem; color:var(--ink-soft); padding-left:1.1em; position:relative; }
+.svc li::before{ content:"·"; position:absolute; left:.2em; color:var(--terra); font-weight:800; }
+
+/* ---------- emergency strip ---------- */
+.emerg{ background:var(--navy); border-radius:var(--r); padding:clamp(1.8rem,4vw,2.6rem); color:#e7edf4;
+  display:flex; flex-wrap:wrap; align-items:center; gap:1.4rem; justify-content:space-between; box-shadow:var(--shadow-card); }
+.emerg h2{ color:#fff; font-size:clamp(1.5rem,2.6vw,2rem); margin:0 0 .3rem; }
+.emerg p{ margin:0; max-width:52ch; color:#d6dfe9; font-size:.98rem; }
+.emerg .btn-white{ background:#fff; color:var(--navy-deep); }
+.emerg .btn-white:hover{ background:var(--cream); }
+
+/* ---------- gallery ---------- */
+.gallery{ display:grid; grid-template-columns:repeat(3,1fr); gap:1.1rem; margin-top:2.2rem; }
+@media (max-width:760px){ .gallery{ grid-template-columns:1fr; } }
+.gallery img{ display:block; width:100%; height:250px; object-fit:cover; border-radius:var(--r-s); box-shadow:var(--shadow-soft); }
+
+/* ---------- location ---------- */
+.map-embed{ display:block; width:100%; height:330px; border:0; border-radius:var(--r-s); }
+.loc-lines{ list-style:none; padding:0; margin:1.2rem 0 0; display:grid; gap:.85rem; }
+.loc-lines li{ display:flex; gap:.7em; align-items:flex-start; color:var(--ink-soft); font-size:.97rem; }
+.loc-lines svg{ width:1.15em; height:1.15em; color:var(--terra); flex:0 0 auto; margin-top:.2em; }
+.loc-lines a{ color:var(--ink); font-weight:700; text-decoration:none; }
+.loc-lines a:hover{ color:var(--navy); }
+
+/* ---------- FAQ ---------- */
+.faq{ margin-top:2.2rem; display:grid; gap:.8rem; }
+.faq details{ border-radius:var(--r-s); overflow:hidden; }
+.faq summary{ list-style:none; cursor:pointer; display:flex; justify-content:space-between; align-items:center; gap:1rem;
+  padding:1.1rem 1.35rem; font-weight:800; font-size:1.01rem; color:var(--ink); }
+.faq summary::-webkit-details-marker{ display:none; }
+.faq summary .pm{ flex:0 0 auto; font-size:1.3rem; color:var(--terra); transition:transform .25s var(--ease); line-height:1; }
+.faq details[open] summary .pm{ transform:rotate(45deg); }
+.faq .a{ padding:0 1.35rem 1.25rem; color:var(--ink-soft); font-size:.95rem; }
+.faq summary:focus-visible{ outline:3px solid var(--terra); outline-offset:-3px; }
+
+/* ---------- final cta ---------- */
+.final-cta{ text-align:center; }
+.final-cta .cta-row{ justify-content:center; }
+
+/* ---------- footer ---------- */
+footer{ padding:clamp(40px,6vh,68px) clamp(20px,5vw,48px) calc(2.4rem + var(--dock-h)); border-top:1px solid var(--line); background:var(--cream-2); }
+@media (min-width:881px){ footer{ padding-bottom:2.4rem; } }
+.footer-inner{ max-width:var(--maxw); margin:0 auto; }
+.legal{ font-size:.78rem; color:var(--ink-dim); line-height:1.7; max-width:100ch; }
+.legal p{ margin:.5rem 0; }
+
+/* ---------- mobile CTA dock ---------- */
+.dock{ position:fixed; inset:auto 0 0; z-index:70; display:none; gap:.7rem;
+  padding:.7rem clamp(14px,4vw,20px) calc(.7rem + env(safe-area-inset-bottom));
+  background:rgba(250,246,239,.97); -webkit-backdrop-filter:blur(12px); backdrop-filter:blur(12px);
+  border-top:1px solid var(--line); }
+.dock .btn{ flex:1; padding:.95em .5em; font-size:.98rem; }
+@media (max-width:880px){ .dock{ display:flex; } body{ padding-bottom:var(--dock-h); } }
+
+/* ---------- reveal ---------- */
+.reveal{ opacity:0; transform:translateY(20px); transition:opacity .7s var(--ease), transform .7s var(--ease); }
+.reveal.in{ opacity:1; transform:none; }
+.d1{ transition-delay:.08s; } .d2{ transition-delay:.16s; } .d3{ transition-delay:.24s; }
+@media (prefers-reduced-motion:reduce){ .reveal{ opacity:1; transform:none; transition:none; } html{ scroll-behavior:auto; } }
+</style>
+</head>
+<body>
+
+<!-- ================= TOP BAR (sticky, all devices) ================= -->
+<header class="topbar">
+  <a href="#hero" aria-label="Haberfield Dental Practice — back to top">
+    <img src="https://haberfielddentists.com.au/wp-content/uploads/2022/02/logo-1-300x88.png" alt="Haberfield Dental Practice">
+  </a>
+  <div class="topbar-actions">
+    <a class="topbar-phone js-call" href="tel:0297978080" aria-label="Call Haberfield Dental Practice on 02 9797 8080">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1 1 .4 2 .7 2.9a2 2 0 0 1-.4 2.1L8.1 10a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.9.6 2.9.7a2 2 0 0 1 1.6 2Z"/></svg>
+      <span>(02)&nbsp;9797&nbsp;8080</span>
+    </a>
+    <a class="btn btn-primary js-book-online" href="https://haberfielddentists.com.au/book-online/" target="_blank" rel="noopener">Book online</a>
+  </div>
+</header>
+
+<main>
+
+  <!-- ================= HERO — PHOTO BANNER + NEW PATIENT OFFER ================= -->
+  <section id="hero">
+    <div class="hero-bg" aria-hidden="true">
+      <img src="https://smile-search-production-uploads-kmfcmkcr.s3.ap-southeast-2.amazonaws.com/images-gallery/1f0d3bf8-58ab-4e6b-8742-ef2bafb07dcd/haberfield-dental/1784267277405-ZlK95PItx9hSlUxGu6N2U.jpg" alt="">
+    </div>
+    <div class="hero-veil" aria-hidden="true"></div>
+    <div class="inner">
+      <span class="hero-badge reveal"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 21s-7-4.5-9.5-9A5.5 5.5 0 0 1 12 6a5.5 5.5 0 0 1 9.5 6c-2.5 4.5-9.5 9-9.5 9Z"/></svg>Keeping Haberfield smiling since 1922</span>
+      <h1 class="reveal d1">New patients welcome — <em>one complete first visit</em></h1>
+      <p class="lede reveal d2">Our New Patient Package is a full 45–60 minute appointment with your local Haberfield dentist: a comprehensive exam, clean and polish, digital imaging and a proper conversation about your smile — everything done thoroughly, the way it's been done here for over 100 years.</p>
+
+      <ul class="incl-chips reveal d2" aria-label="New patient package highlights">
+        <li><span class="check"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><path d="M5 12l5 5L20 6"/></svg></span>Comprehensive exam</li>
+        <li><span class="check"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><path d="M5 12l5 5L20 6"/></svg></span>Clean &amp; polish</li>
+        <li><span class="check"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><path d="M5 12l5 5L20 6"/></svg></span>Digital imaging &amp; X-rays*</li>
+        <li><span class="check"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><path d="M5 12l5 5L20 6"/></svg></span>Fluoride treatment</li>
+      </ul>
+
+      <div class="cta-row reveal d2">
+        <a class="btn btn-primary btn-lg js-book-online" href="https://haberfielddentists.com.au/book-online/" target="_blank" rel="noopener">Book online</a>
+        <a class="btn btn-ghost btn-lg js-call" href="tel:0297978080">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1 1 .4 2 .7 2.9a2 2 0 0 1-.4 2.1L8.1 10a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.9.6 2.9.7a2 2 0 0 1 1.6 2Z"/></svg>
+          Call (02) 9797 8080
+        </a>
+      </div>
+
+      <div class="reviews reveal d3" aria-label="370 or more five star Google reviews">
+        <span class="stars" aria-hidden="true">★★★★★</span>
+        <span class="reviews-text"><strong>370+</strong> five-star Google reviews</span>
+      </div>
+      <p class="hours-line reveal d3"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 3"/></svg>Mon to Fri 9am – 5.30pm <span class="sat-pill">Open Saturdays · 8am – 1pm</span></p>
+    </div>
+  </section>
+
+  <!-- ================= NEW PATIENT PACKAGE IN FULL ================= -->
+  <section id="new-patients">
+    <div class="inner grid-2">
+      <div>
+        <p class="eyebrow reveal">The new patient experience</p>
+        <h2 class="reveal d1">Everything in your first visit</h2>
+        <p class="lede reveal d2">Your new patient appointment runs 45–60 minutes — unhurried, thorough and friendly — and includes:</p>
+        <ul class="ticks two-col reveal d2">
+          <li><span class="check"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><path d="M5 12l5 5L20 6"/></svg></span>Comprehensive oral examination</li>
+          <li><span class="check"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><path d="M5 12l5 5L20 6"/></svg></span>Clean and polish</li>
+          <li><span class="check"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><path d="M5 12l5 5L20 6"/></svg></span>Oral cancer screening</li>
+          <li><span class="check"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><path d="M5 12l5 5L20 6"/></svg></span>Fluoride treatment</li>
+          <li><span class="check"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><path d="M5 12l5 5L20 6"/></svg></span>Digital imaging</li>
+          <li><span class="check"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><path d="M5 12l5 5L20 6"/></svg></span>Periodontal screening</li>
+          <li><span class="check"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><path d="M5 12l5 5L20 6"/></svg></span>Diagnostic X-rays (if required)</li>
+          <li><span class="check"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><path d="M5 12l5 5L20 6"/></svg></span>Photographs (if required)</li>
+          <li><span class="check"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><path d="M5 12l5 5L20 6"/></svg></span>Oral hygiene education</li>
+          <li><span class="check"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><path d="M5 12l5 5L20 6"/></svg></span>Treatment discussion</li>
+        </ul>
+        <div class="cta-row reveal d3">
+          <a class="btn btn-primary btn-lg js-book-online" href="https://haberfielddentists.com.au/book-online/" target="_blank" rel="noopener">Book your first visit</a>
+          <p class="cta-note">X-rays are all done on-site at the time of your appointment — no delays, no referrals elsewhere.</p>
+        </div>
+      </div>
+      <div class="offer-photo reveal d2">
+        <img src="https://haberfielddentists.com.au/wp-content/uploads/2023/11/new-patient-offer.jpg" alt="Haberfield Dental Practice new patient offer">
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= OTHER OFFERS ================= -->
+  <section class="alt" id="offers">
+    <div class="inner">
+      <p class="eyebrow reveal">More ways we help</p>
+      <h2 class="reveal d1">Current offers &amp; easy ways to pay</h2>
+      <div class="offer-grid">
+        <article class="card offer reveal d1">
+          <div class="body">
+            <span class="tag warm">Whitening offer</span>
+            <h3>Custom take-home whitening kit</h3>
+            <p>A quick 15-minute appointment: full 3D scan of your teeth (no gooey moulds) and shade assessment, then custom-fitted bleaching trays and professional whitening gel to use at home.</p>
+            <ul class="ticks">
+              <li><span class="check"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><path d="M5 12l5 5L20 6"/></svg></span>3D digital scan &amp; shade assessment</li>
+              <li><span class="check"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><path d="M5 12l5 5L20 6"/></svg></span>Custom bleaching trays, made for you</li>
+              <li><span class="check"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><path d="M5 12l5 5L20 6"/></svg></span>Professional whitening gel for home</li>
+            </ul>
+            <p class="cta-note" style="margin-top:1rem;">Call us for the current whitening offer price and availability.</p>
+          </div>
+        </article>
+        <article class="card offer reveal d2">
+          <div class="body">
+            <span class="tag">Kids &amp; families</span>
+            <h3>Child Dental Benefits Schedule</h3>
+            <p>We proudly welcome Medicare's Child Dental Benefits Schedule — eligible children can receive up to $1,000 in dental treatment over two consecutive calendar years.</p>
+            <ul class="ticks">
+              <li><span class="check"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><path d="M5 12l5 5L20 6"/></svg></span>Up to $1,000 for eligible children</li>
+              <li><span class="check"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><path d="M5 12l5 5L20 6"/></svg></span>Gentle, kid-friendly first visits from age 2</li>
+              <li><span class="check"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><path d="M5 12l5 5L20 6"/></svg></span>Any out-of-pocket costs explained before treatment</li>
+            </ul>
+          </div>
+        </article>
+        <article class="card offer reveal d3">
+          <div class="body">
+            <span class="tag">Flexible payment</span>
+            <h3>Afterpay payment plans</h3>
+            <p>We've partnered with Afterpay so you can access the care you need, when you need it — paying off treatment in four fortnightly instalments.</p>
+            <ul class="ticks">
+              <li><span class="check"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><path d="M5 12l5 5L20 6"/></svg></span>Four fortnightly instalments, no deposit</li>
+              <li><span class="check"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><path d="M5 12l5 5L20 6"/></svg></span>Simple online application — most approvals instant</li>
+              <li><span class="check"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><path d="M5 12l5 5L20 6"/></svg></span>Treatment can often start the same day</li>
+            </ul>
+          </div>
+        </article>
+      </div>
+      <p class="smallprint reveal">Offers are subject to availability and may change; any fees and out-of-pocket costs are always explained before treatment begins. Afterpay is subject to provider terms and approval. CDBS eligibility is determined by Medicare, and some services may not be bulk-billed.</p>
+    </div>
+  </section>
+
+  <!-- ================= DENTISTS ================= -->
+  <section id="dentists">
+    <div class="inner">
+      <p class="eyebrow reveal">The smiley dentists</p>
+      <h2 class="reveal d1">Meet your dentists</h2>
+      <p class="lede reveal d2">Experienced, gentle and genuinely local — from your very first visit, our dentists take the time to properly understand your smile, explain every option clearly, and make you feel completely at home.</p>
+
+      <div class="dentists">
+        <article class="card dentist-card reveal d2">
+          <img src="https://haberfielddentists.com.au/wp-content/uploads/2022/04/Dr-Matthew-Salameh-copy.jpg" alt="Dr Matthew Salameh, Principal Dentist at Haberfield Dental Practice" loading="lazy">
+          <div class="body">
+            <p class="role">Principal Dentist</p>
+            <h3>Dr Matthew Salameh</h3>
+            <p class="quals">BMedSc (Syd. Uni) · BDent (Syd. Uni)</p>
+            <blockquote>"From your first visit, you're part of our dental family."</blockquote>
+            <p>Dr Matthew leads the practice with a thorough, personalised approach to every patient's oral care journey — from family check-ups and children's dentistry through to orthodontics, cosmetic and surgical treatment. Your first appointment with him is never rushed: it's a full picture of your oral health and an honest conversation about what comes next.</p>
+          </div>
+        </article>
+        <article class="card dentist-card reveal d3">
+          <img src="https://haberfielddentists.com.au/wp-content/uploads/2025/11/1-1.webp" alt="Dr Larissa Savvas, Dentist at Haberfield Dental Practice" loading="lazy">
+          <div class="body">
+            <p class="role">Dentist</p>
+            <h3>Dr Larissa Savvas</h3>
+            <p class="quals">DMD · BSc(Adv)(Hons)</p>
+            <blockquote>"Every patient deserves care that's calm, kind and unhurried."</blockquote>
+            <p>Caring, detailed and warm with patients of all ages, Dr Larissa helps every member of the family feel at ease — taking the time at your first visit to listen, explain and tailor your care, while delivering modern, high-quality dentistry.</p>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= COMMUNITY / HERITAGE ================= -->
+  <section class="alt" id="community">
+    <div class="inner">
+      <p class="eyebrow reveal">Your local Inner West dentist</p>
+      <h2 class="reveal d1">In the heart of Haberfield, serving the community for over <em>100 years</em></h2>
+      <p class="lede reveal d2">Haberfield Dental Practice has been synonymous with dental care in Haberfield since 1922 — a reputation built on trust, thorough treatment and genuinely caring for our patients. Known locally as "the smiley dentists", we welcome families from Haberfield, Five Dock, Leichhardt, Ashfield, Summer Hill, Croydon, Drummoyne and right across the Inner West. From the moment you walk in, you're part of our dental family.</p>
+
+      <div class="stats">
+        <div class="card stat reveal d1"><span class="num">100+</span><p>Years of keeping Haberfield smiling</p></div>
+        <div class="card stat reveal d2"><span class="num">370+</span><p>Five-star Google reviews from our patients</p></div>
+        <div class="card stat reveal d3"><span class="num">360+</span><p>Clear aligner cases and counting</p></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= SERVICES ================= -->
+  <section id="services">
+    <div class="inner">
+      <p class="eyebrow reveal">Complete family care</p>
+      <h2 class="reveal d1">Every smile, every age, under one roof</h2>
+      <p class="lede reveal d2">From your six-monthly check-up to braces, Invisalign, implants and everything between — all delivered with state-of-the-art equipment, including our 3D digital scanner (no goop, no gagging).</p>
+
+      <div class="svc-grid">
+        <div class="card svc reveal d1">
+          <span class="ico" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 21s-7-4.5-9.5-9A5.5 5.5 0 0 1 12 6a5.5 5.5 0 0 1 9.5 6c-2.5 4.5-9.5 9-9.5 9Z"/></svg></span>
+          <h3>General Dentistry</h3>
+          <ul><li>Check-ups &amp; dental cleaning</li><li>White fillings</li><li>Root canal treatment</li><li>Mouthguards &amp; bruxism care</li><li>TMJ &amp; jaw joint therapy</li><li>Snoring &amp; sleep apnoea</li></ul>
+        </div>
+        <div class="card svc reveal d1">
+          <span class="ico" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="9" cy="8" r="4"/><path d="M2 21c0-3.9 3.1-7 7-7s7 3.1 7 7"/><circle cx="17.5" cy="7.5" r="2.5"/><path d="M22 21c0-2.5-1.6-4.6-3.8-5.4"/></svg></span>
+          <h3>Children's Dentistry</h3>
+          <ul><li>Kids &amp; family dental care</li><li>First visits from age 2</li><li>Fissure sealants</li><li>Dental braces</li><li>CDBS bulk-billing for eligible kids</li></ul>
+        </div>
+        <div class="card svc reveal d2">
+          <span class="ico" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 3l1.9 5.6L20 10l-5.1 3.1L16 19l-4-3-4 3 1.1-5.9L4 10l6.1-1.4L12 3Z"/></svg></span>
+          <h3>Cosmetic Dentistry</h3>
+          <ul><li>Teeth whitening</li><li>Invisalign clear aligners</li><li>Porcelain &amp; composite veneers</li><li>iTero 3D digital scanning</li></ul>
+        </div>
+        <div class="card svc reveal d2">
+          <span class="ico" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 7l3 3M5 16l3 3M9.5 5.5 18.5 14.5M5.5 9.5 14.5 18.5M3 21l2.5-2.5M18.5 5.5 21 3"/></svg></span>
+          <h3>Reconstructive Dentistry</h3>
+          <ul><li>Dental implants</li><li>Crowns &amp; bridges</li><li>Dentures</li><li>Wisdom teeth removal</li><li>Oral surgery</li></ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= EMERGENCY ================= -->
+  <section id="emergency" style="padding-top:0;">
+    <div class="inner">
+      <div class="emerg reveal">
+        <div>
+          <h2>Dental emergency? We're here for you.</h2>
+          <p>Toothache, a broken tooth or a knocked-out tooth — emergency dental care is available right here at the practice. Call us as early as you can and we'll get you seen as soon as possible.</p>
+        </div>
+        <a class="btn btn-lg btn-white js-call" href="tel:0297978080">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1 1 .4 2 .7 2.9a2 2 0 0 1-.4 2.1L8.1 10a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.9.6 2.9.7a2 2 0 0 1 1.6 2Z"/></svg>
+          Call (02) 9797 8080
+        </a>
+      </div>
+
+      <div class="gallery">
+        <img class="reveal d1" src="https://haberfielddentists.com.au/wp-content/gallery/haberfield-gallery/haberfield-dental-4.jpg" alt="The friendly team at Haberfield Dental Practice" loading="lazy">
+        <img class="reveal d2" src="https://haberfielddentists.com.au/wp-content/gallery/haberfield-gallery/haber-field-dental-2.jpg" alt="A modern treatment room at Haberfield Dental Practice" loading="lazy">
+        <img class="reveal d3" src="https://haberfielddentists.com.au/wp-content/gallery/haberfield-gallery/haberfield-dental-practice.jpg" alt="A patient being cared for at Haberfield Dental Practice" loading="lazy">
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= LOCATION ================= -->
+  <section class="alt" id="location">
+    <div class="inner grid-2">
+      <div>
+        <p class="eyebrow reveal">Visit us</p>
+        <h2 class="reveal d1">Find us on Ramsay Street</h2>
+        <p class="lede reveal d2">Right in the heart of Haberfield — easy to reach from Five Dock, Leichhardt, Ashfield, Summer Hill and across the Inner West, with Saturday morning appointments for busy families.</p>
+        <ul class="loc-lines reveal d2">
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 10c0 6-8 12-8 12S4 16 4 10a8 8 0 1 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg><span>102 Ramsay St, Haberfield NSW 2045</span></li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1 1 .4 2 .7 2.9a2 2 0 0 1-.4 2.1L8.1 10a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.9.6 2.9.7a2 2 0 0 1 1.6 2Z"/></svg><a href="tel:0297978080" class="js-call">(02) 9797 8080</a></li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 3"/></svg><span>Mon to Fri 9am – 5.30pm <span class="sat-pill">Open Saturdays · 8am – 1pm</span></span></li>
+        </ul>
+        <div class="cta-row reveal d3">
+          <a class="btn btn-primary js-book-online" href="https://haberfielddentists.com.au/book-online/" target="_blank" rel="noopener">Book online</a>
+          <a class="btn btn-ghost js-call" href="tel:0297978080">Call the practice</a>
+        </div>
+      </div>
+      <div class="reveal d2">
+        <iframe class="map-embed" title="Map to Haberfield Dental Practice, 102 Ramsay Street Haberfield" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3312.360993002094!2d151.1363647505443!3d-33.880355580558096!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6b12baa869380789%3A0xa10ea3cc72c14513!2sHaberfield%20Dental%20Practice!5e0!3m2!1sen!2sin!4v1649393995738!5m2!1sen!2sin" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= FAQ ================= -->
+  <section id="faq">
+    <div class="inner">
+      <p class="eyebrow reveal">Good to know</p>
+      <h2 class="reveal d1">Questions we hear often</h2>
+
+      <div class="faq reveal d2">
+        <details class="card">
+          <summary>What happens at my first appointment?<span class="pm" aria-hidden="true">+</span></summary>
+          <div class="a">Your new patient appointment runs 45–60 minutes and covers everything: a comprehensive oral examination, clean and polish, oral cancer and periodontal screening, digital imaging, X-rays and photographs where required, fluoride treatment, oral hygiene education and a proper discussion of any treatment — with all costs explained before anything goes ahead.</div>
+        </details>
+        <details class="card">
+          <summary>How often should I see the dentist?<span class="pm" aria-hidden="true">+</span></summary>
+          <div class="a">The traditional rule of thumb is every six months — regular check-ups are the best way to prevent, catch and fix dental concerns early. People at higher risk of dental disease, such as smokers or those with a particularly sweet tooth, may benefit from visiting every three to four months.</div>
+        </details>
+        <details class="card">
+          <summary>Do you see children? When should my child first visit?<span class="pm" aria-hidden="true">+</span></summary>
+          <div class="a">Absolutely — we're a family practice through and through. We generally recommend a child's first visit at around 2 years of age (earlier if there's an issue), where we check their development is on track and make the dentist a fun, positive place from the start. We also welcome Medicare's Child Dental Benefits Schedule for eligible children — up to $1,000 over two calendar years.</div>
+        </details>
+        <details class="card">
+          <summary>Can you help in a dental emergency?<span class="pm" aria-hidden="true">+</span></summary>
+          <div class="a">Yes — emergency dental care is one of our services. If you have a toothache, broken tooth, knocked-out tooth or swelling, call us on (02) 9797 8080 as early as you can and we'll get you seen as soon as possible. For severe facial swelling affecting breathing or swallowing, or major trauma, go to your nearest hospital emergency department.</div>
+        </details>
+        <details class="card">
+          <summary>Do I need X-rays?<span class="pm" aria-hidden="true">+</span></summary>
+          <div class="a">X-rays reveal hidden decay and give your dentist a complete picture of your teeth. For your convenience we have our own X-ray machine on-site, so it's all done at your appointment without delays. They're digital, so exposure is extremely low — dental X-ray radiation is equivalent to around 2% of your normal everyday radiation. Generally X-rays are taken every two years, depending on your decay risk.</div>
+        </details>
+        <details class="card">
+          <summary>Do you offer payment plans?<span class="pm" aria-hidden="true">+</span></summary>
+          <div class="a">Yes — we've partnered with Afterpay, which lets you pay off treatment in four fortnightly instalments with no deposit. Applying is quick and paperless — you just need Australian photo ID and your contact details, and most approvals are instant, so treatment can often start the same day. Afterpay is subject to provider terms and approval.</div>
+        </details>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= FINAL CTA ================= -->
+  <section class="alt final-cta" id="book">
+    <div class="inner">
+      <p class="eyebrow reveal" style="justify-content:center;">Join our dental family</p>
+      <h2 class="reveal d1">Ready to smile with us?</h2>
+      <p class="lede reveal d2" style="margin-inline:auto;">Book your complete new patient visit online in a couple of minutes, or call our friendly team — we'd love to welcome you to the practice.</p>
+      <div class="cta-row reveal d2">
+        <a class="btn btn-primary btn-lg js-book-online" href="https://haberfielddentists.com.au/book-online/" target="_blank" rel="noopener">Book online now</a>
+        <a class="btn btn-ghost btn-lg js-call" href="tel:0297978080">Call (02) 9797 8080</a>
+      </div>
+      <div class="reviews reveal d3" style="justify-content:center;">
+        <span class="stars" aria-hidden="true">★★★★★</span>
+        <span class="reviews-text"><strong>370+</strong> five-star Google reviews</span>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<!-- ================= FOOTER ================= -->
+<footer>
+  <div class="footer-inner">
+    <img src="https://haberfielddentists.com.au/wp-content/uploads/2022/02/logo-1-300x88.png" alt="Haberfield Dental Practice" style="height:52px;width:auto;display:block;margin-bottom:1.3rem;">
+    <div class="legal">
+      <p>102 Ramsay St, Haberfield NSW 2045 · <a href="tel:0297978080" style="color:inherit;">(02) 9797 8080</a> · Mon to Fri 9am – 5.30pm, Sat 8am – 1pm</p>
+      <p>Care at Haberfield Dental Practice is provided by registered dental practitioners. Any dental procedure carries risks and benefits — before proceeding, you should seek advice from an appropriately qualified health practitioner. Offers are subject to availability and any out-of-pocket costs are explained before treatment. Afterpay is subject to provider terms and approval; CDBS eligibility is determined by Medicare.</p>
+      <p>© Haberfield Dental Practice. All rights reserved · Website Design by <a href="https://generateyouraudience.com/" target="_blank" rel="noopener">Generate Your Audience</a></p>
+    </div>
+  </div>
+</footer>
+
+<!-- ================= MOBILE CTA DOCK (always visible while scrolling) ================= -->
+<div class="dock" role="navigation" aria-label="Quick actions">
+  <a class="btn btn-ghost js-call" href="tel:0297978080">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1 1 .4 2 .7 2.9a2 2 0 0 1-.4 2.1L8.1 10a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.9.6 2.9.7a2 2 0 0 1 1.6 2Z"/></svg>
+    Call now
+  </a>
+  <a class="btn btn-primary js-book-online" href="https://haberfielddentists.com.au/book-online/" target="_blank" rel="noopener">Book online</a>
+</div>
+
+<script>
+/* reveal on scroll */
+(function(){
+  var els = document.querySelectorAll(".reveal");
+  if (!("IntersectionObserver" in window)) { els.forEach(function(e){ e.classList.add("in"); }); return; }
+  var io = new IntersectionObserver(function(entries){
+    entries.forEach(function(en){ if (en.isIntersecting){ en.target.classList.add("in"); io.unobserve(en.target); } });
+  }, { threshold:.12, rootMargin:"0px 0px -6% 0px" });
+  els.forEach(function(e){ io.observe(e); });
+})();
+</script>
+
+</body>
+</html>
