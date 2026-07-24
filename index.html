@@ -183,6 +183,8 @@ section.alt{ background:var(--cream-2); }
 .offer-price{ font-family:"Montserrat",sans-serif; font-weight:800; font-size:2rem; color:var(--terra); margin:1rem 0 0; line-height:1; }
 .offer-price .was{ font-size:.9rem; font-weight:600; color:var(--ink-dim); text-decoration:line-through; margin-left:.5em; }
 .offer-price .was::before{ content:"usually "; text-decoration:none; display:inline; }
+.fund-logos{ display:flex; align-items:center; gap:1.6rem; flex-wrap:wrap; margin:1.1rem 0 .2rem; }
+.fund-logos img{ height:36px; width:auto; display:block; }
 
 /* ---------- dentists (photo left, bio right, stacked rows) ---------- */
 .dentists{ display:grid; gap:1.6rem; margin-top:2.2rem; }
@@ -397,6 +399,10 @@ footer{ padding:clamp(40px,6vh,68px) clamp(20px,5vw,48px) calc(2.4rem + var(--do
           <div class="body">
             <span class="tag warm">Health funds</span>
             <h3>Westfund &amp; CBHS provider practice</h3>
+            <div class="fund-logos">
+              <img src="westfund-logo.png" alt="Westfund Health Insurance" loading="lazy">
+              <img src="cbhs-logo.png" alt="CBHS Health" loading="lazy">
+            </div>
             <p>We're a provider practice for Westfund and CBHS — so for eligible members, check-up and clean appointments are usually fully covered by your extras, with nothing to pay on the day.</p>
             <ul class="ticks">
               <li><span class="check"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><path d="M5 12l5 5L20 6"/></svg></span>Provider practice for Westfund and CBHS members</li>
